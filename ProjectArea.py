@@ -4,11 +4,11 @@ import time
 # This verifies authenticity of a reddit account and that we are allowed to create a bot
 from praw.exceptions import RedditErrorItem, APIException
 
-reddit = praw.Reddit(client_id="G7it5PH88exEow",
-                     client_secret="a0O8wZZ25hEq0Qercjqu95BzzAXTVA",
+reddit = praw.Reddit(client_id="Client ID",
+                     client_secret="Client Secret",
                      user_agent="my user agent",
-                     username="LotusMagician",
-                     password="Magicctr1030")
+                     username="Username",
+                     password="Password")
 # This checks to make sure that the bot can interact with the website to make posts,comments,up vote,etc.
 # if reddit.validate_on_submit is always false unless you change it like I have done below
 reddit.validate_on_submit = True
